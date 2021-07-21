@@ -24,6 +24,5 @@
       (io/make-parents real-p)
       (spit real-p (replace-project-name (slurp p) project-name)))))
 
-#_(current-file->wd)
-
+;; bb script.clj /path/for/new/project new-project-name
 (process *command-line-args* paths)
