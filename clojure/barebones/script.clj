@@ -9,11 +9,7 @@
 (def files
   ["deps.edn"
    "src/{{PROJECT_NAME}}/core.clj"
-   "src/{{PROJECT_NAME}}/repl.clj"]
-  #_(apply concat
-           [(io/file "deps.edn")]
-           (filter #(.isFile %) (file-seq (io/file "src")))
-           (filter #(.isFile %) (file-seq (io/file "dev")))))
+   "src/{{PROJECT_NAME}}/repl.clj"])
 
 (def PROJECT_NAME_RX #"\{\{PROJECT_NAME\}\}")
 
