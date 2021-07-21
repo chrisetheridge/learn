@@ -1,4 +1,4 @@
-(ns {{PROJECT_NAME}} .repl
+(ns webserver.repl
     (:require
      [nrepl.server :as nrepl]))
 
